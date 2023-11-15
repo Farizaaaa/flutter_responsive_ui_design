@@ -13,7 +13,7 @@ class _DateListState extends State<DateList> {
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
-    List _selectedIndexs = [];
+    //List _selectedIndexs = [];
     return Container(
         width: screenSize.width,
         height: 100,
@@ -21,7 +21,7 @@ class _DateListState extends State<DateList> {
             scrollDirection: Axis.horizontal,
             itemCount: 10,
             itemBuilder: (context, index) {
-              final _isSelected = _selectedIndexs.contains(index);
+              //final _isSelected = _selectedIndexs.contains(index);
               return Padding(
                 padding: EdgeInsets.all(8),
                 child: Row(

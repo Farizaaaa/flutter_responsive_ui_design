@@ -34,19 +34,17 @@ class SearchBarWidget extends StatelessWidget implements PreferredSizeWidget {
           width: screenSize.width * 0.6,
           height: 45,
           color: primary,
-          child: Container(
-            child: TextField(
-              readOnly: isReadOnly,
-              decoration: InputDecoration(
-                hintText: "Search ",
-                hintStyle:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
-                fillColor: Colors.grey.shade300,
-                filled: true,
-                border: OutlineInputBorder(
-                  borderSide: BorderSide.none,
-                  borderRadius: BorderRadius.all(Radius.circular(90.0)),
-                ),
+          child: TextField(
+            readOnly: isReadOnly,
+            decoration: InputDecoration(
+              hintText: "Search ",
+              hintStyle: const TextStyle(
+                  color: Colors.black, fontWeight: FontWeight.w500),
+              fillColor: Colors.grey.shade300,
+              filled: true,
+              border: const OutlineInputBorder(
+                borderSide: BorderSide.none,
+                borderRadius: BorderRadius.all(Radius.circular(90.0)),
               ),
             ),
           ),
