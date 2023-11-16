@@ -3,7 +3,7 @@ import 'package:flutter_responsive_ui/screens/home_screen.dart';
 import 'package:flutter_responsive_ui/screens/product_screen.dart';
 import 'package:flutter_responsive_ui/screens/registration_screen.dart';
 
-List<Widget> screens = [HomeScreen(), ProductScreen(), RegistrationScreen()];
+List<Widget> screens = [const HomeScreen(), ProductScreen(), const RegistrationScreen()];
 
 const double kAppBarHeight = 90;
 final dayName = [

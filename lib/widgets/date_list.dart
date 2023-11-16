@@ -23,11 +23,11 @@ class _DateListState extends State<DateList> {
             itemBuilder: (context, index) {
               //final _isSelected = _selectedIndexs.contains(index);
               return Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 10,
                     ),
                     Container(
@@ -43,12 +43,12 @@ class _DateListState extends State<DateList> {
                         children: [
                           Text(
                             dayName[index],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 18),
                           ),
                           Text(
                             dayDate[index].toString(),
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontWeight: FontWeight.bold, fontSize: 20),
                           ),
                         ],

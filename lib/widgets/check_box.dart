@@ -44,7 +44,7 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 10.0),
+          padding: const EdgeInsets.only(top: 10.0),
           child: Text(
             widget.title2,
             style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
@@ -69,7 +69,7 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0),
+              padding: const EdgeInsets.only(top: 10.0),
               child: Text(
                 widget.title,
                 style:
@@ -92,7 +92,7 @@ class _CheckBoxWidgetState extends State<CheckBoxWidget> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.0),
+              padding: const EdgeInsets.only(top: 10.0),
               child: Text(
                 widget.hintText,
                 style:

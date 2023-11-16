@@ -52,14 +52,14 @@ class _ResponsiveLayoutState extends State<ResponsiveLayout> {
                   ),
                   Tab(
                     icon: Icon(
-                      Icons.shopping_bag_outlined,
+                      Icons.work_history,
                       size: 25,
                     ),
-                    text: "Cart",
+                    text: "Work",
                   ),
                   Tab(
-                    icon: Icon(Icons.message_outlined, size: 25),
-                    text: "Profile",
+                    icon: Icon(Icons.login_rounded, size: 25),
+                    text: "Sign Up",
                   )
                 ]),
           ),

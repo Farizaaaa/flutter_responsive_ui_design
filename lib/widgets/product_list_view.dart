@@ -6,7 +6,7 @@ class ProductsShowcaseListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
-    double height = screenSize.height / 4;
+    double height = screenSize.height / 3.1;
     double width = screenSize.width;
     double titleHeight = 25;
     return Container(
@@ -28,9 +28,9 @@ class ProductsShowcaseListView extends StatelessWidget {
           itemCount: 10,
           itemBuilder: (context, index) {
             return Padding(
-              padding: const EdgeInsets.fromLTRB(40, 5, 20, 5),
+              padding: const EdgeInsets.fromLTRB(40, 5, 20, 0),
               child: Container(
-                  height: 50,
+                  height: 100,
                   width: 400,
                   clipBehavior: Clip.hardEdge,
                   decoration: BoxDecoration(
@@ -49,8 +49,9 @@ class ProductsShowcaseListView extends StatelessWidget {
                     color: Colors.white,
                   ),
                   child: GridView.builder(
-                      itemCount: 12,
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      itemCount: 16,
+                      gridDelegate:
+                          const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 4,
                         crossAxisSpacing: 20,
                         mainAxisSpacing: 10,
@@ -61,14 +62,14 @@ class ProductsShowcaseListView extends StatelessWidget {
                         index,
                       ) {
                         return Padding(
-                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          padding: EdgeInsets.only(left: 10, right: 10),
                           child: Container(
                               height: 50,
                               width: 50,
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 128, 110, 55),
+                                  color: Color.fromARGB(255, 228, 112, 4),
                                   borderRadius: BorderRadius.circular(20)),
-                              child: Icon(
+                              child: const Icon(
                                 Icons.check,
                                 size: 30,
                                 color: Colors.white,

@@ -13,7 +13,7 @@ class ProductAppbar extends StatelessWidget implements PreferredSizeWidget {
     return Container(
       height: kAppBarHeight,
       width: screenSize.width,
-      decoration: BoxDecoration(color: Color.fromARGB(255, 139, 161, 248)),
+      decoration: const BoxDecoration(color: Color.fromARGB(255, 139, 161, 248)),
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Row(
@@ -22,15 +22,15 @@ class ProductAppbar extends StatelessWidget implements PreferredSizeWidget {
           children: [
             IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.arrow_back_ios, color: Colors.white)),
-            Text("Working History",
+                icon: const Icon(Icons.arrow_back_ios, color: Colors.white)),
+            const Text("Working History",
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                     fontSize: 20)),
             IconButton(
                 onPressed: () {},
-                icon: Icon(color: Colors.white, Icons.remove_circle_outline))
+                icon: const Icon(color: Colors.white, Icons.remove_circle_outline))
           ],
         ),
       ),

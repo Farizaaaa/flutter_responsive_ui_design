@@ -46,20 +46,22 @@ class ProductScreen extends StatelessWidget {
             const ProductsShowcaseListView(),
             Container(
                 padding: const EdgeInsets.all(10),
-                color: Colors.white,
                 width: screenSize.width,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  boxShadow: [BoxShadow(color: Colors.grey)],
+                ),
                 child: Text(
-                  "headding of text",
+                  "Works Completed",
                   style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.grey.shade800,
                       fontSize: 18),
                 )),
-            const ProductListTileView()
+            ProductListTileView()
           ],
         ),
       ),
     );
-    ;
   }
 }
